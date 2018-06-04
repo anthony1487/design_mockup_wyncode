@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+}
+
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+/* ... */
+
+/* header */
+header {
+  margin: 0;
+  /* padding: 0; */
+  display: flex;
+  background-color: #1C1F28;
+  text-align: center;
+  padding: 8em 8em;
+}
+/* header:after{
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+} */
+/* .header_column{
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  padding: 1px;
+  background-color: black;
+  border-style: solid;
+  border-color: blue;
+} */
+header img{
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+/* What I Do */
+
+
+/* What I Do section: */
+
+/* Create two equal columns that floats next to each other */
+
+.what_i_do_column {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 10px;
+  height: inherit;
+
+
+}
+
+/* Clear floats after the columns */
+.what_i_do_row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: white;
+  height: 100%;
+}
+.what_i_do_column img{
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* Create two equal columns that floats next to each other */
+.about_me_column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* height: inherit; */
+  background-color: lightgrey;
+  margin: 0 auto;
+
+
+}
+.curlybracketsvg{
+  text-align: center;
+  height: inherit;
+}
+/* Clear floats after the columns */
+.about_me_row:after {
+  content: "";
+  display: flex;
+  clear: both;
+
+
+}
+.portfolio:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 100%;
+}
+
+.portfolio_content {
+  background-color: #1C1F28;
+  float: left;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border: 5em;
+
+}
+
+.social_row:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 100%;
+}
+.social_content_column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* height: 300px; */
+  background-color: #27BDAE;
+  color: white;
+}
+i {
+  color: white;
+}
+a {
+  color: white;
+}
+
+.contact:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 100%;
+
+  }
+.contact_content {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  /* height: 300px; */
+  background-color: #1C1F28;
+  text-align: center;
+  color: white;
+  }
+  input{
+    border-top: 1px white;
+    background: transparent;
+    color: white;
+  }
+.name_field{
+  width: 100%;
+}
+.phone_field{
+  width: 50%;
+}
+.email_field{
+  width: 50%
+}
+.text_box{
+  background: transparent;
+  color: white;
+  width: 100%;
+}
+
+/* .what_i_do{
+  background-color: white;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.what_i_do_left{
+  background-color: white;
+  padding-top: 6em;
+  padding-left: 3em;
+  float:left;
+  width:50%;
+}
+
+.what_i_do_right{
+  float:left;
+  width:50%;
+} */
+.what_i_do_column p{
+  text-align: justify;
+}
+.what_i_do_column h2{
+  text-align: center;
+}
+
+.what_i_do_column img{
+  padding-top: 6em;
+  padding-left: 3em;
+  height: 100%;
+  width: 100%;
+}
+
+/* About Me */
+.about_me{
+  background-color: lightgrey;
+  display: block;
+  height: 30em;
+
+}
+.about_me_left{
+  float:left;
+    width:50%;
+}
+.about_me_right{
+  float:right;
+  width:50%;
+}
+
+/* Portfolio */
+.portfolio{
+  background-color: #1C1F28;
+  color: white;
+  display: block;
+  height: 30em;
+}
+.portfolio_content{
+
+}
+/* Social */
+.social{
+  background-color: #27BDAE;
+  height: 30em;
+  display: block;
+  border-style: solid;
+  border-color: #1C1F28;
+}
+/* Contact */
+.contact{
+  background-color: #1C1F28;
+
+}
+.dribble_link{
+  width: 10em;  height: 2em;
+}
+.form-submit-button{
+  background-color: #1C1F28;
+}
+/* #portfolio {
+  background-color: black;
+}
+
+#social {
+  background-color: #27BDAE;
+}
+
+#contact {
+  background-color: black;
+} */
+
+button{
+  color: white;
+  background-color: #1C1F28;
+  float: right;
+}
+/* border-style: solid;
+border-color: blue; */
+@media only screen and (min-width: 768px){
+/* header */
+
+/* title */
+
+/* article */
+
+/* events */
+/* #content {
+  display: flex; */
+}
+
+/* footer */
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
