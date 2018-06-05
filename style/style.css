@@ -135,30 +135,46 @@ header img{
   font-weight: 900;
 }
 /* Clear floats after the columns */
+ .portfolio{
 
+  background-color: #1C1F28;
+  color: white;
+  display: flex;
+  width:100%;
+  height: auto;
+  border:  6px solid red;
+  flex-direction: column;
+}
+
+/*
 .portfolio:after {
   content: "";
   display: block;
   clear: both;
   height: 100vh;
   background-color: white;
-}
+} */
 
 .portfolio_content {
   background-color: #1C1F28;
-  float: left;
-  width: 100%;
-  height: 100vh;
+  /* float: center; */
+  margin: 100px;
+  width: 90%;
+  height: auto;
   color: white;
   text-align: center;
   /* padding-top: 200px; */
-  padding-top: 150px;
+  /* padding-top: 150px; */
   border-style:solid;
   border-color: green;
-  border-bottom-color: white;
+  /* border-bottom-color: white; */
   /* border: 5em; */
 
 }
+
+
+
+
 
 .social_row:after {
   content: "";
@@ -224,12 +240,6 @@ a {
 
 
 /* Portfolio */
-.portfolio{
-  background-color: #1C1F28;
-  color: white;
-  display: block;
-  height: 30em;
-}
 
 /* Contact */
 .contact{
