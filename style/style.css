@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: normal;
   font-family: 'Crimson Text', serif;
 }
 
@@ -18,43 +20,28 @@ a {
 }
 
 /* header */
-/* ... */
 
-/* header */
-header {
-  margin: 0;
-  /* padding: 0; */
-  display: flex;
-  background-color: #1C1F28;
-  text-align: center;
-  padding: 8em 8em;
-}
-/* header:after{
-  content: "";
-  display: table;
-  clear: both;
-  height: 100%;
-} */
-/* .header_column{
+.header_content{
   float: left;
   width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: center;
-  padding: 1px;
-  background-color: black;
-  border-style: solid;
-  border-color: blue;
-} */
+  height: 100vh;
+}
+
+
 header img{
   height: auto;
   width: auto;
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  padding-top: 105px;
 }
-/* What I Do */
 
+}
+#flex-container{
+  display: flex;
+  flex-direction: column;
+}
 
 /* What I Do section: */
 
@@ -64,66 +51,112 @@ header img{
   float: left;
   width: 50%;
   max-height: 100%;
-  padding: 10px;
-  height: inherit;
-
+  /* padding: 10px; */
+  height: 80vh;
 
 }
+.what_i_do_column2 {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 10px;
+  height: 80vh;
+}
+
 
 /* Clear floats after the columns */
 .what_i_do_row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
   background-color: white;
   height: 100%;
+
 }
-.what_i_do_column img{
+.what_i_do_column2 img{
   height: auto;
   width: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 50%;
   margin: 0 auto;
-  padding: 1em;
+}
+.what_i_do_header{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  width: 100%;
+}
+.designer_bold{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+/* About Me Section */
+/* Create two equal columns that floats next to each other */
+.about_me_row:after {
+  ccontent: "";
+  display: flex;
+  clear: both;
+  background-color: white;
+  height: 90vh;
 }
 
-/* Create two equal columns that floats next to each other */
 .about_me_column {
   float: left;
   width: 50%;
+  /* max-height: 100%; */
   padding: 10px;
+  height: 100vh;
+  /* float: left;
+  width: 48%;
+  height: 100vh; */
+  /* padding: 10px; */
   /* height: inherit; */
-  background-color: lightgrey;
-  margin: 0 auto;
-
-
+  background-color: #fafafa;
+  /* margin: 0 auto; */
+}
+.about_me_column2 {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  /* padding: 10px; */
+  padding-right: 60px;
+  height: 100vh;
+  background-color: #fafafa;
 }
 .curlybracketsvg{
   text-align: center;
-  height: inherit;
+  padding-top: 40%;
+}
+.about_me_header{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+.DEV_BOLD{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
 /* Clear floats after the columns */
-.about_me_row:after {
-  content: "";
-  display: flex;
-  clear: both;
 
-
-}
 .portfolio:after {
   content: "";
   display: block;
   clear: both;
-  height: 100%;
+  height: 100vh;
+  background-color: white;
 }
 
 .portfolio_content {
   background-color: #1C1F28;
   float: left;
   width: 100%;
+  height: 100vh;
   color: white;
   text-align: center;
-  border: 5em;
+  /* padding-top: 200px; */
+  padding-top: 150px;
+  border-style:solid;
+  border-color: green;
+  border-bottom-color: white;
+  /* border: 5em; */
 
 }
 
@@ -136,6 +169,7 @@ header img{
 .social_content_column {
   float: left;
   width: 50%;
+  height: 100vh;
   padding: 10px;
   /* height: 300px; */
   background-color: #27BDAE;
@@ -158,6 +192,7 @@ a {
 .contact_content {
   float: left;
   width: 100%;
+  height: 100vh;
   padding: 10px;
   /* height: 300px; */
   background-color: #1C1F28;
@@ -184,53 +219,9 @@ a {
   width: 100%;
 }
 
-/* .what_i_do{
-  background-color: white;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.what_i_do_left{
-  background-color: white;
-  padding-top: 6em;
-  padding-left: 3em;
-  float:left;
-  width:50%;
-}
-
-.what_i_do_right{
-  float:left;
-  width:50%;
-} */
-.what_i_do_column p{
-  text-align: justify;
-}
-.what_i_do_column h2{
-  text-align: center;
-}
-
-.what_i_do_column img{
-  padding-top: 6em;
-  padding-left: 3em;
-  height: 100%;
-  width: 100%;
-}
-
 /* About Me */
-.about_me{
-  background-color: lightgrey;
-  display: block;
-  height: 30em;
 
-}
-.about_me_left{
-  float:left;
-    width:50%;
-}
-.about_me_right{
-  float:right;
-  width:50%;
-}
+
 
 /* Portfolio */
 .portfolio{
@@ -239,17 +230,7 @@ a {
   display: block;
   height: 30em;
 }
-.portfolio_content{
 
-}
-/* Social */
-.social{
-  background-color: #27BDAE;
-  height: 30em;
-  display: block;
-  border-style: solid;
-  border-color: #1C1F28;
-}
 /* Contact */
 .contact{
   background-color: #1C1F28;
@@ -261,17 +242,6 @@ a {
 .form-submit-button{
   background-color: #1C1F28;
 }
-/* #portfolio {
-  background-color: black;
-}
-
-#social {
-  background-color: #27BDAE;
-}
-
-#contact {
-  background-color: black;
-} */
 
 button{
   color: white;
@@ -280,25 +250,55 @@ button{
 }
 /* border-style: solid;
 border-color: blue; */
-@media only screen and (min-width: 768px){
-/* header */
 
-/* title */
-
-/* article */
-
-/* events */
-/* #content {
-  display: flex; */
+/*small phone, iPhone 5 and up */
+@media only screen and (min-width: 320px){
+/* What I Do Page */
+.what_i_do_column{
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+  }
+.what_i_do_column2 {
+  display: none;
+  }
 }
-
-/* footer */
+/* About Me Page */
+.about_me_column {
+display: none;
 }
+.about_me_column2 {
+    float: left;
+    width: 100%;
+    padding-top: 20%;
+    padding-left: 10px;
+  }
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+@media only screen and (min-width: 768px){
+/* .what_i_do_column_img{
+  display:none;
+} */
+.what_i_do_column {
+  /* float: left; */
+  width: 45%;
+}
+.what_i_do_column2 {
+  display: block;
+  width: 50%;
+}
+/* About Me Page */
+.about_me_column {
+display: block;
+}
+.about_me_column2 {
+    float: left;
+    width: 50%;
+    padding-top: 20%;
+  }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
